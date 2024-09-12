@@ -1,0 +1,33 @@
+.vending-machine-screen {
+    background-color: #000; /* Dark background for the screen */
+    border: 3px solid #00FF00; /* Neon green border to mimic a vending machine display */
+    border-radius: 10px; /* Rounded corners for the screen */
+    width: 300px; /* Width of the screen */
+    height: 150px; /* Height of the screen */
+    display: flex; /* Flex to center the content */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    margin: 20px auto; /* Center on the page */
+    box-shadow: 0 0 10px #00FF00; /* Neon glow effect */
+}
+
+.vending-message {
+    color: #00FF00; /* Neon green text */
+    font-family: 'Courier New', Courier, monospace; /* Digital, fixed-width font */
+    font-size: 20px; /* Large font size */
+    text-align: center; /* Center the text */
+    animation: flicker 1s infinite alternate; /* Add flickering effect */
+}
+
+/* Flickering effect */
+@keyframes flicker {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 1;
+    }
+}

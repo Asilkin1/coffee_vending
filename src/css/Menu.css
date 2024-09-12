@@ -1,0 +1,68 @@
+
+.menu-container {
+    background-color: #000; /* Dark background to simulate vending machine display */
+    border: 3px solid #FFFFFF; /* White border for screen edge */
+    border-radius: 15px; /* Rounded edges for screen */
+    width: 400px; /* Width of the screen */
+    padding: 20px;
+    margin: 50px auto; /* Center the screen */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2); /* Subtle glow for screen effect */
+    text-align: center;
+}
+
+.menu{
+    background: #f5ff6f;
+    display: flex;
+    min-height: 30%;
+    height:20em;
+    
+}
+
+.drink {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #1a1a1a;
+    border: 2px solid #00FF00; /* Neon green border for each drink option */
+    border-radius: 10px;
+    box-shadow: 0 0 10px #00FF00; /* Neon glow effect */
+    color:white;
+
+}
+
+.drink h1 {
+    color: #FFF; /* White text for drink names */
+    font-family: 'Courier New', Courier, monospace; /* Digital-style font */
+    font-size: 22px;
+}
+
+.drink p {
+    color: #fbfff1; /* Light grey text for descriptions */
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+}
+
+.drink button {
+    background-color: #00FF00; /* Neon green button */
+    color: #000000; /* Dark text inside button */
+    border: none;
+    padding: 10px 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.drink button:hover {
+    background-color: #00cc00; /* Darker green on hover */
+}
+
+.drink button:active {
+    background-color: #009900; /* Even darker green when clicked */
+}
+
+@media (max-width: 600px) {
+    .menu-container {
+        width: 90%;
+    }
+}

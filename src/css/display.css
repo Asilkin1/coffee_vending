@@ -1,0 +1,13 @@
+.display {
+    background-color: #000;
+    color: #0f0;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #555;
+  }

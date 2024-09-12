@@ -1,23 +1,34 @@
-import logo from './logo.svg';
 import './App.css';
+import { Menu } from './Components/Menu/Menu';
+
+// test menu
+const test_menu = [
+  {
+      name:"Mocha",
+      desc:" Coffee with milk",
+      price: 100,
+      index:1
+  },
+  {
+      name:"Latte",
+      desc:" Coffee with milk foam",
+      price: 120,
+      index: 2
+  },
+  {
+      name:"Black",
+      desc:" Coffee without milk",
+      price: 80,
+      index: 3
+  }
+];
+
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Menu menu_data={test_menu}/>
     </div>
   );
 }

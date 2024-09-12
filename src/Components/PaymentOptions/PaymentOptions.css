@@ -1,0 +1,61 @@
+.payment-options-container {
+    background-color: #000; /* Dark background */
+    border: 3px solid #FFFFFF; /* White border for a vending machine display */
+    border-radius: 15px; /* Rounded edges */
+    padding: 20px;
+    margin: 50px auto;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2); /* Glow effect */
+}
+
+.payment-options-container h2 {
+    color: #FFF; /* White text for the title */
+    font-family: 'Courier New', Courier, monospace; /* Digital font */
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.payment-button {
+    width: 100%;
+    margin: 15px 0;
+    padding: 15px;
+    border-radius: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: none;
+}
+
+.payment-button.cash {
+    background-color: #FFD700; /* Gold for Cash */
+    color: #000;
+    box-shadow: 0 0 10px #FFD700; /* Glow effect */
+}
+
+.payment-button.card {
+    background-color: #00FF00; /* Neon green for Card */
+    color: #000;
+    box-shadow: 0 0 10px #00FF00; /* Neon green glow */
+}
+
+.payment-button:hover {
+    transform: scale(1.05); /* Slight zoom when hovered */
+    box-shadow: 0 0 15px #FFFFFF; /* Bright glow on hover */
+}
+
+.payment-button:active {
+    transform: scale(0.95); /* Slight shrink effect on click */
+    box-shadow: 0 0 5px #FFFFFF; /* Diminished glow on click */
+}
+
+@media (max-width: 600px) {
+    .payment-options-container {
+        width: 90%;
+    }
+
+    .payment-button {
+        font-size: 18px;
+        padding: 10px;
+    }
+}
